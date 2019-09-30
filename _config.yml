@@ -1,20 +1,20 @@
 title:             Matemática - Licenciatura  
 email:             maf172.teste@gmail.com
 description:       Página mantida por alunos da disciplina MAF 172 - Matemática Computacional
-author:            Fernando B.S., José V.N., Guilherme F.C.O. 
+author:            GJ
+#url:               "localhost:4000"
 url:               "http://maf172-teste.github.io/"
+baseurl:
 
-timezone:          America/Sao_Paulo
-root:              \maf172-teste.github.io
-permalink:         year/:month/:day/:title/
-source_dir:        \maf172-teste.github.io\posts
-tag_dir:           \maf172-teste.github.io\posts
-archive_dir:       \maf172-teste.github.io\posts
+# Social Profiles
+#twitter_username:  SBootstrap
+#github_username:   BlackrockDigital
+#facebook_username: StartBootstrap
 
-new_post_name:     title.html
-titlecase:         false
-external_link:     true
-date_format:       YYYY-MM-DD
-time_format:       HH:mm:ss
-per_page:          20
-pagination_dir:    page
+# Build settings
+markdown:          kramdown
+paginate:          30
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
