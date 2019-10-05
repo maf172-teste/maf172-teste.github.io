@@ -3,7 +3,6 @@ title: O Curso Segundo os Alunos
 layout: post
 background: /img/bg-post.jpg
 subtitle: Um pouco sobre o curso de Matemática de Florestal
-#artist: artstation.com/antoinecollignon
 ---
 
 ### **O que os alunos pensam sobre a UFV - Campus Florestal**
