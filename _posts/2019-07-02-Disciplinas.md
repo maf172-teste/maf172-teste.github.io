@@ -19,10 +19,10 @@ Todos quando estamos tentando descobrir qual curso fazer, passamos por alguns pr
 <div style="text-align: justify;">
 Ao entrarmos na universidade ficamos assustados em como será nossa resposta às dificuldades das matérias que veremos ao decorrer do curso. Sempre ouvimos que tudo é bem difícil, porém na Universidade Federal de Viçosa - *Campus* Florestal temos uma passagem gradativa entre as matérias subindo de nível nas dificuldades de acordo com que vamos indo para o próximo período.
   
-  Essas matérias são :
+Essas matérias são :
 
 * [**_MAF201_** - **Matemática Elementar**](http://www.catalogo.ufv.br/interno.php?ano=2019&curso=LCM&campus=caf&complemento=*&periodo=1&disciplina=MAF%20201#disciplina) : Conjuntos Numéricos. Funções elementares. Trigonometria e funções trigonométricas. Função exponencial e logarítmica. Introdução aos números complexos. Polinômios.
-
+<!--
 * [**_MAF135_** - **Geometria Analítica e Álgebra Linear**](http://www.catalogo.ufv.br/interno.php?ano=2019&curso=LCM&campus=caf&complemento=*&periodo=1&disciplina=MAF%20135#disciplina)(GAAL): Matrizes, sistemas de equações lineares e determinantes. Vetores no plano e no espaço. Cônicas e quádricas. Espaços vetoriais Euclidianos. Diagonalização de matrizes. Transformações lineares.
 
 * [**_MAF109_** - **Resolução de Problemas**](http://www.catalogo.ufv.br/interno.php?ano=2019&curso=LCM&campus=caf&complemento=*&periodo=1&disciplina=MAF%20109#disciplina): Números naturais. Raízes de funções polinomiais. Números complexos de um ponto de vista geométrico. Funções trigonométricas. Triângulos: congruência; semelhança; relações métricas e trigonométricas. Áreas de figuras planas.
@@ -194,3 +194,4 @@ MAF246|Construção dos Números Reais	           |QMF107|Laboratório de Quími
 MAF251|Geometria Descritiva                    |QMF145|História da Química
 MAF252|Introdução à Teoria dos Grafos          |TBC493|Tópicos Especiais em Políticas de Saúde e Cidadania
 MAF261|Estatística Experimental                | 
+-->
