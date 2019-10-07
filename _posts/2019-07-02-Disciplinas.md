@@ -550,4 +550,3 @@ optativas](http://www.catalogo.ufv.br/interno.php?ano=2019&curso=LCM&campus=caf&
 </tbody>
 </table>
 
-Or leave it empty and use the [link text itself](http://www.reddit.com)
