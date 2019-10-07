@@ -1,13 +1,8 @@
 ---
-title: "Disciplinas"
-author: "Joyce de Souza Sforzin"
-date: "25/09/2019"
-output: 
-  html_document:
-   keep_md: true
-   toc: yes
-   code_folding: hide
-   theme: darkly
+title: Disciplinas
+layout: post
+subtitle: Programas das disciplinas
+background: https://raw.githack.com/maf172-teste/maf172-teste.github.io/master/img/curso.jpg
 ---
 
 

@@ -26,7 +26,7 @@ Todos quando estamos tentando descobrir qual curso fazer, passamos por alguns pr
 <div style="text-align: justify;">
 Ao entrarmos na universidade ficamos assustados em como será nossa resposta às dificuldades das matérias que veremos ao decorrer do curso. Sempre ouvimos que tudo é bem difícil, porém na Universidade Federal de Viçosa - *Campus* Florestal temos uma passagem gradativa entre as matérias subindo de nível nas dificuldades de acordo com que vamos indo para o próximo período.
   
-  Essas matérias são :
+ Essas matérias são :
 
 * [**_MAF201_** - **Matemática Elementar**](http://www.catalogo.ufv.br/interno.php?ano=2019&curso=LCM&campus=caf&complemento=*&periodo=1&disciplina=MAF%20201#disciplina) : Conjuntos Numéricos. Funções elementares. Trigonometria e funções trigonométricas. Função exponencial e logarítmica. Introdução aos números complexos. Polinômios.
 
