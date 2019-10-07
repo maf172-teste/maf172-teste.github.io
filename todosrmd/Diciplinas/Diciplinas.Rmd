@@ -25,7 +25,8 @@ Ao entrarmos na universidade ficamos assustados em como será nossa resposta às
   
  Essas matérias são :
 
-* [**_MAF201_** - **Matemática Elementar**](http://www.catalogo.ufv.br/interno.php?ano=2019&curso=LCM&campus=caf&complemento=*&periodo=1&disciplina=MAF%20201#disciplina) : Conjuntos Numéricos. Funções elementares. Trigonometria e funções trigonométricas. Função exponencial e logarítmica. Introdução aos números complexos. Polinômios.
+* [MAF201 - Matemática Elementar][maf201]
+:Conjuntos Numéricos. Funções elementares. Trigonometria e funções trigonométricas. Função exponencial e logarítmica. Introdução aos números complexos. Polinômios.
 
 * [**_MAF135_** - **Geometria Analítica e Álgebra Linear**](http://www.catalogo.ufv.br/interno.php?ano=2019&curso=LCM&campus=caf&complemento=*&periodo=1&disciplina=MAF%20135#disciplina)(GAAL): Matrizes, sistemas de equações lineares e determinantes. Vetores no plano e no espaço. Cônicas e quádricas. Espaços vetoriais Euclidianos. Diagonalização de matrizes. Transformações lineares.
 
@@ -198,3 +199,9 @@ MAF246|Construção dos Números Reais	           |QMF107|Laboratório de Quími
 MAF251|Geometria Descritiva                    |QMF145|História da Química
 MAF252|Introdução à Teoria dos Grafos          |TBC493|Tópicos Especiais em Políticas de Saúde e Cidadania
 MAF261|Estatística Experimental                | 
+
+Or leave it empty and use the [link text itself]
+
+[link text itself]: http://www.reddit.com
+
+[maf201]: http://www.catalogo.ufv.br/interno.php?ano=2019&curso=LCM&campus=caf&complemento=*&periodo=1&disciplina=MAF%20201#disciplina
