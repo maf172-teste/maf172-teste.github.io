@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### **O que os alunos pensam sobre a UFV - Campus Florestal**
  
-Foi realizada uma pesquisa entre alguns alunos do curso de Licenciatura em Matemática da UFV - Campus Florestal, com o objetivo de reunir opniões a respeito do campus e do curso em geral. Abaixo estão listadas as perguntas com as respectivas respostas obtidas.
+<p> Foi realizada uma pesquisa entre alguns alunos do curso de Licenciatura em Matemática da UFV - Campus Florestal, com o objetivo de reunir opniões a respeito do campus e do curso em geral. Abaixo estão listadas as perguntas com as respectivas respostas obtidas.\p
 
 
 #### **Alunos Entrevistados**
