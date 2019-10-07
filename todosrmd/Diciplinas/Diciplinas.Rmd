@@ -2,8 +2,9 @@
 title: "Disciplinas"
 author: "Joyce de Souza Sforzin"
 date: "25/09/2019"
-output:
+output: 
   html_document:
+   keep_md: true
    toc: yes
    code_folding: hide
    theme: darkly
