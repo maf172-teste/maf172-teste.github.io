@@ -27,8 +27,7 @@ para o próximo período.
 
 Essas matérias são :
 
--   [MAF201 - Matemática
-    Elementar](http://www.catalogo.ufv.br/interno.php?ano=2019&curso=LCM&campus=caf&complemento=*&periodo=1&disciplina=MAF%20201#disciplina)
+-   [***MAF201*** - **Matemática Elementar**](http://www.catalogo.ufv.br/interno.php?ano=2019&curso=LCM&campus=caf&complemento=*&periodo=1&disciplina=MAF%20201#disciplina)
     :Conjuntos Numéricos. Funções elementares. Trigonometria e funções
     trigonométricas. Função exponencial e logarítmica. Introdução aos
     números complexos. Polinômios.
