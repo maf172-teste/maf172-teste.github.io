@@ -1,15 +1,3 @@
----
-title: "A Pós Graduação"
-bibliography: bibfile.bib
-date: "2018-01-11 06:34:49 +0000"
-layout: post
-subtitle: Programas de Pós Graduação de Interesse
-tags:
-- SpyGame
-- Fiction
-background: https://raw.githack.com/maf172-teste/maf172-teste.github.io/master/img/PosGraduacao.jpg
----
-
 **O que é uma pós-graduação?**
 ------------------------------
 
