@@ -4,8 +4,8 @@ description:       Página mantida por alunos da disciplina MAF 172 - Matemátic
 author:            GJ
 #url:               "localhost:4000"
 url:               "http://maf172-teste.github.io/"
-baseurl:
-#
+#baseurl:
+external_link:    true
 # Social Profiles
 #twitter_username:  SBootstrap
 #github_username:   BlackrockDigital
@@ -19,4 +19,3 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-external_link:    true
