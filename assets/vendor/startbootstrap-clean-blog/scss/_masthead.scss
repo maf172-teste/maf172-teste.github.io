@@ -3,7 +3,7 @@ header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: $gray-600;
+  background-color: $gray-300;
   background-attachment: scroll;
   position: relative;
   height: 300px;
@@ -42,7 +42,7 @@ header.masthead {
       margin-top: 0;
     }
     .subheading {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 300;
       line-height: 2;
       display: block;
