@@ -1,7 +1,7 @@
 // Global styling for this template
 body {
   background-color: black;
-  font-size: 30px;
+  font-size: 25px;// Tamanho das letras dos posts
   color: rgba(255,255,255,.6);
   @include serif-font;
 }
