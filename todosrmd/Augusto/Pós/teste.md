@@ -120,3 +120,31 @@ EDO I
 EDP I
 
 Várias Variáveis Complexas
+
+Outras Universidades que possuem Mestrado são:
+----------------------------------------------
+
+### Norte
+
+UFAM <br /> UFPA <br />
+
+### NORDESTE
+
+UFC <br /> UEM <br /> UFPE <br /> FUFPI <br /> UFBA <br /> UFBA - UFAL
+<br /> UFCG <br /> UFPB <br /> UFALUFMA <br /> UFRN <br />
+
+### SUL
+
+UFPR <br /> UFRGS-M <br /> UFRGS-APL <br /> UDSCUEL <br /> UFSM <br />
+
+### CENTRO OESTE
+
+UNB-MAT <br /> UFG <br /> UNB <br />
+
+### SUDESTE
+
+IMPA <br /> PUCRIO <br /> UFRJMAT <br /> UNICAMP-M <br /> UFMGMAT <br />
+UNICAMP-APL <br /> USPEST <br /> UFMGEST <br /> UFF <br /> UFRJ-EST
+<br /> UNESP <br /> USP-MAT <br /> USP-APL <br /> UFABC <br /> UFSCAR-E
+<br /> UFU <br /> FGV <br /> UFES <br /> UFJF <br /> UFV <br /> UNIFEI
+<br />
