@@ -5,12 +5,12 @@ background: /img/bg-post.jpg
 subtitle: Um pouco sobre o curso de Matemática de Florestal
 ---
 
-### **O que os alunos pensam sobre a UFV - Campus Florestal**
+## **O que os alunos pensam sobre a UFV - Campus Florestal**
  
 Foi realizada uma pesquisa entre alguns alunos do curso de Licenciatura em Matemática da UFV - Campus Florestal, com o objetivo de reunir opniões a respeito do campus e do curso em geral. Abaixo estão listadas as perguntas com as respectivas respostas obtidas.
 
 
-#### **Alunos Entrevistados**
+## **Alunos Entrevistados**
 
 **1)** Henrique Ribeiro Diniz - 2° período 
 
@@ -36,7 +36,7 @@ Currículo Lattes: <http://lattes.cnpq.br/8911642538380730>
 
 Currículo Lattes: <http://lattes.cnpq.br/3564003680640102>
 
-#### **O que te fez escolher o curso de Licenciatura em Matemática?**
+### **O que te fez escolher o curso de Licenciatura em Matemática?**
 
 **Henrique:** Já ter dado aulas de reforço para alguns alunos de ensino fundamental e médio me fez enxergar o gosto por ensinar, sempre tive facilidade com matemática, já ter sido medalhista de prata e bronze da OBMEP e por ter referências na minha família que decidiram seguir a área da educação.
 
@@ -54,7 +54,7 @@ Currículo Lattes: <http://lattes.cnpq.br/3564003680640102>
 
 **Vinícius:** O grande amor e facilidade em Matemática durante a vida escolar.
 
-#### **O que te fez escolher a Universidade Federal de Viçosa – Campus Florestal?**
+### **O que te fez escolher a Universidade Federal de Viçosa – Campus Florestal?**
 
 **Henrique:** Por ser uma universidade federal, o curso de licenciatura em matemática ser bem avaliado no MEC (até mesmo melhor avaliada que universidades tomadas como modelo em MG) e a localidade.
 
@@ -72,7 +72,7 @@ Currículo Lattes: <http://lattes.cnpq.br/3564003680640102>
 
 **Vinícius:** A UFV é uma instituição com grande nome, por ser relativamente perto e com mais oportunidades que outras instituições.
 
-#### **O que você está achando/achou sobre o curso de Licenciatura em Matemática oferecido pela UFV – Campus Florestal?**
+### **O que você está achando/achou sobre o curso de Licenciatura em Matemática oferecido pela UFV – Campus Florestal?**
 
 **Henrique:** Que atende a avaliação do MEC mencionada no item anterior, o curso é bem amplo e interessante, composto também por matérias contidas no bacharel o que possibilita  uma maior facilidade no ingresso de um mestrado, ou bons resultados em concursos, etc.
 
@@ -90,7 +90,7 @@ Currículo Lattes: <http://lattes.cnpq.br/3564003680640102>
 
 **Vinícius:** Um curso com grande bagagem para continuar os estudos tanto na área profissional quanto acadêmica.
 
-#### **O que você está achando/achou, em geral, sobre os professores de Matemática da universidade?**
+### **O que você está achando/achou, em geral, sobre os professores de Matemática da universidade?**
 
 **Henrique:** Não tive contatos com todos ainda, entretanto, os que tive a oportunidade de aula são bastante atenciosos e bons professores, sempre se disponham a horários de consultas, e possuem boa didática, lógico que alguns professores atingem mais a expectativas que outros, mas todos excelentes.
 
@@ -109,7 +109,7 @@ são bastantes acessíveis.
 
 **Vinícius:** Os professores são acessíveis, podendo tirar dúvidas e muito disponíveis para orientações e possíveis projetos.
 
-#### **Quais aspectos positivos, sobre a universidade, você destacaria em sua experiência como discente.**
+### **Quais aspectos positivos, sobre a universidade, você destacaria em sua experiência como discente.**
 
 **Henrique:** Tem alguns pontos a melhorar, entretanto a universidade está avançando com a infraestrutura como a criação do LEN (novo prédio de laboratórios) e do novo refeitório, novos projetos sendo encaminhados. Outro ponto é o contato direto do aluno com o professor para o que precisar, projetos da universidade, além de ter cursos técnicos e ensino médio federal e estadual.
 
@@ -128,7 +128,7 @@ As oportunidades como o PIBID, residência pedagógica, que nos inclui na sala d
 
 **Vinícius:** Em minha experiência levarei a forma de ensino e a forma como se trata o aluno, não tive nenhum problema com professor de nenhuma área.
 
-#### **O que você diria para futuros discentes do curso?**
+### **O que você diria para futuros discentes do curso?**
 
 **Henrique:** Para não desanimarem se acharem o curso difícil, pois realmente ele será pesado, mas com o intuito de te preparar para ser um melhor profissional ou seguir seus estudos.
 
