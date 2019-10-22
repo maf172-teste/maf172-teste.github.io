@@ -190,6 +190,66 @@ window.buildTabsets = function(tocID) {
 };
 
 </script>
+<script>
+window.initializeCodeFolding = function(show) {
+
+  // handlers for show-all and hide all
+  $("#rmd-show-all-code").click(function() {
+    $('div.r-code-collapse').each(function() {
+      $(this).collapse('show');
+    });
+  });
+  $("#rmd-hide-all-code").click(function() {
+    $('div.r-code-collapse').each(function() {
+      $(this).collapse('hide');
+    });
+  });
+
+  // index for unique code element ids
+  var currentIndex = 1;
+
+  // select all R code blocks
+  var rCodeBlocks = $('pre.r, pre.python, pre.bash, pre.sql, pre.cpp, pre.stan, pre.julia');
+  rCodeBlocks.each(function() {
+
+    // create a collapsable div to wrap the code in
+    var div = $('<div class="collapse r-code-collapse"></div>');
+    if (show || $(this)[0].classList.contains('fold-show'))
+      div.addClass('in');
+    var id = 'rcode-643E0F36' + currentIndex++;
+    div.attr('id', id);
+    $(this).before(div);
+    $(this).detach().appendTo(div);
+
+    // add a show code button right above
+    var showCodeText = $('<span>' + (show ? 'Hide' : 'Code') + '</span>');
+    var showCodeButton = $('<button type="button" class="btn btn-default btn-xs code-folding-btn pull-right"></button>');
+    showCodeButton.append(showCodeText);
+    showCodeButton
+        .attr('data-toggle', 'collapse')
+        .attr('data-target', '#' + id)
+        .attr('aria-expanded', show)
+        .attr('aria-controls', id);
+
+    var buttonRow = $('<div class="row"></div>');
+    var buttonCol = $('<div class="col-md-12"></div>');
+
+    buttonCol.append(showCodeButton);
+    buttonRow.append(buttonCol);
+
+    div.before(buttonRow);
+
+    // update state of button on show/hide
+    div.on('hidden.bs.collapse', function () {
+      showCodeText.text('Code');
+    });
+    div.on('show.bs.collapse', function () {
+      showCodeText.text('Hide');
+    });
+  });
+
+}
+</script>
 <style type="text/css">.hljs-literal {
 color: #990073;
 }
@@ -344,6 +404,9 @@ summary {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
 
 
@@ -360,6 +423,14 @@ summary {
 
 <div class="fluid-row" id="header">
 
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
 
 
 <h1 class="title toc-ignore">Pesquisa</h1>
@@ -368,13 +439,24 @@ summary {
 
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#programas-de-iniciacao-cientifica-existentes-ufv-florestal">Programas de iniciação científica existentes UFV Florestal</a></li>
+<li><a href="#pibiccnpq">PIBIC/CNPQ</a></li>
+<li><a href="#pibiccnpq-af-acoes-afirmativas">PIBIC/CNPQ AF (AÇÕES AFIRMATIVAS)</a></li>
+<li><a href="#pibic-emcnpqufv">PIBIC EM/CNPQ/UFV</a></li>
+<li><a href="#pibicfapemig-temporariamente-suspenso">PIBIC/FAPEMIG (TEMPORARIAMENTE SUSPENSO)</a></li>
+<li><a href="#bic-juniorfapemig-temporariamente-suspenso">BIC-JUNIOR/FAPEMIG (TEMPORARIAMENTE SUSPENSO)</a></li>
+<li><a href="#funarbic">FUNARBIC</a></li>
+<li><a href="#pibiticnpq">PIBITI/CNPQ</a></li>
+<li><a href="#pivic">PIVIC</a></li>
+</ul>
+</div>
 
-<p>Programas de iniciação científica existentes UFV Florestal.</p>
-<p>Para participar,</p>
-<p>Escolha primeiro programa que mais se encaixa no seu perfil.</p>
-<p>Fique atento as datas de inscrição presentes em cada edital!</p>
-<p>Procure o Professor com formação na sua área de interesse, e apresente claramente seus objetivos.</p>
-<p>Se seu objetivo é trabalhar com sistemas dinâmicos você poderá procurar um dos Professores:</p>
+<div id="programas-de-iniciacao-cientifica-existentes-ufv-florestal" class="section level2">
+<h2>Programas de iniciação científica existentes UFV Florestal</h2>
+<div style="text-align:justify;">
+<p>Para participar, escolha primeiro programa que mais se encaixa no seu perfil. Fique atento as datas de inscrição presentes em cada edital! Procure o Professor com formação na sua área de interesse, e apresente claramente seus objetivos. Se seu objetivo é trabalhar com sistemas dinâmicos você poderá procurar um dos Professores:</p>
 <p>Alexandre Alvarenga Rocha, Justino Muniz Júnior, Lucas Carvalho Silva, Lúcio Paccori Lima, Luiz Gustavo Perona Araújo ou Sérgio Henrique Nogueira.</p>
 <p>Se seu interesse é pela estatística você poderá procura um dos Professores:</p>
 <p>Fernando de Souza Bastos ou Guaraci de Lima Requena.</p>
@@ -382,31 +464,66 @@ summary {
 <p>Mas se seu interesse é pela Educação matemática, deverá procurar pela Professora Lúcia Helena dos Santos Lobato ou pelo Professor Gerson Geraldo Chaves.</p>
 <p>Se sua prioridade é a álgebra deverá falar com a Professora Danielle Franco Nicolau ou Professor Luís Felipe Gonçalves Fonseca. Caso sua proposta seja aceita seu orientador irá submeter o projeto para avaliação conforme consta no edital.</p>
 <p>Bons estudos!</p>
-<p>PIBIC/CNPQ</p>
+</div>
+</div>
+<div id="pibiccnpq" class="section level2">
+<h2>PIBIC/CNPQ</h2>
+<div style="text-align:justify;">
 <p>Programa que tem por objetivo despertar a vocação científica e incentivar novos talentos entre estudantes de graduação. O PIBIC visa ainda: contribuir para a formação de recursos humanos para a pesquisa; para a formação científica de recursos humanos que se dedicarão a qualquer atividade profissional; estimular uma maior articulação entre a graduação e a pós-graduação; qualificar alunos para os programas de pós-graduação e reduzir o tempo médio de sua permanência na pós-graduação; estimular pesquisadores produtivos a envolverem estudantes de graduação nas atividades científica, tecnológica, profissional e artístico-cultural; e proporcionar ao bolsista, orientado por pesquisador qualificado, a aprendizagem de técnicas e métodos de pesquisa, bem como estimular o desenvolvimento do pensar cientificamente e da criatividade, decorrentes das condições criadas pelo confronto direto com os problemas de pesquisa. Período de inscrições: Abril a maio. Maiores informações.</p>
 <p>EDITAL:<a href="http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf" class="uri">http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf</a></p>
-<p>PIBIC/CNPQ AF (AÇÕES AFIRMATIVAS)</p>
+</div>
+</div>
+<div id="pibiccnpq-af-acoes-afirmativas" class="section level2">
+<h2>PIBIC/CNPQ AF (AÇÕES AFIRMATIVAS)</h2>
+<div style="text-align:justify;">
 <p>O PIBIC-Af é um programa que visa ampliar a oportunidade de formação técnico-científica pela concessão de bolsas de IC para os alunos do ensino superior, cuja inserção no ambiente acadêmico se deu por uma ação afirmativa. Tem como objetivos: contribuir para a formação científica de recursos humanos entre os beneficiários de políticas de ações afirmativas de qualquer atividade profissional; ampliar o acesso e a integração dos estudantes beneficiários de políticas de ações afirmativas à cultura científica; e fortalecer a política de ação afirmativa existente nas instituições. Público alvo: Alunos que entraram com alguma ação afirmativa de acordo com a Lei 12.711, de 2012. Período de inscrições: Abril a maio. Maiores informações.</p>
 <p>EDITAL: <a href="http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf" class="uri">http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf</a></p>
-<p>PIBIC EM/CNPQ/UFV</p>
+</div>
+</div>
+<div id="pibic-emcnpqufv" class="section level2">
+<h2>PIBIC EM/CNPQ/UFV</h2>
+<div style="text-align:justify;">
 <p>O objetivo do PIBIC-EM é fortalecer o processo de disseminação das informações e conhecimentos científicos e tecnológicos básicos, bem como desenvolver as atitudes, habilidades e valores necessários à educação científica e tecnológica dos estudantes do Ensino Médio ampliando sua formação e permitindo que mantenham contato com um projeto científico, despertando o interesse pela pesquisa científica. Os projetos submetidos, pelos orientadores, deverão ter um caráter de formação e nível de execução compatível com alunos do ensino médio. Público alvo: Alunos do ensino médio Período de inscrições: Abril a maio.</p>
 <p>Para maiores informações.</p>
 <p>EDITAL: <a href="http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf" class="uri">http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf</a></p>
-<p>PIBIC/FAPEMIG (TEMPORARIAMENTE SUSPENSO)</p>
+</div>
+</div>
+<div id="pibicfapemig-temporariamente-suspenso" class="section level2">
+<h2>PIBIC/FAPEMIG (TEMPORARIAMENTE SUSPENSO)</h2>
+<div style="text-align:justify;">
 <p>O PIBIC/FAPEMIG tem a finalidade de despertar e desenvolver o interesse de estudantes de graduação pelas atividades de pesquisa nas diversas áreas do conhecimento e especialidades. Como parte da política da Diretoria de Pesquisa e Pós-Graduação/Pró-Reitoria de Pesquisa e Pós-Graduação objetiva-se, por meio deste programa, ampliar as oportunidades dos docentes que concluíram o doutorado recentemente e demais doutorados de orientarem bolsistas de iniciação científica e promoverem o fortalecimento da linha de pesquisa em que atuam.</p>
-<p>BIC-JUNIOR/FAPEMIG (TEMPORARIAMENTE SUSPENSO)</p>
+</div>
+</div>
+<div id="bic-juniorfapemig-temporariamente-suspenso" class="section level2">
+<h2>BIC-JUNIOR/FAPEMIG (TEMPORARIAMENTE SUSPENSO)</h2>
+<div style="text-align:justify;">
 <p>Despertar em estudantes do ensino fundamental, médio e de educação profissional da Rede Pública, a vocação científica para a pesquisa, concedendo bolsas para participarem de projetos/atividades de pesquisa ou de extensão científica, tecnológica ou de inovação, orientados por pesquisador qualificado. Período de atividades: março (ano corrente) a fevereiro (ano seguinte)</p>
-<p>FUNARBIC</p>
+</div>
+</div>
+<div id="funarbic" class="section level2">
+<h2>FUNARBIC</h2>
+<div style="text-align:justify;">
 <p>O programa propõe ampliar as oportunidades de orientação de iniciação científica aos docentes que concluíram o doutorado nos últimos cinco anos e promover o fortalecimento da linha de pesquisa em que atuam. Período de inscrições: Abril a maio Para maiores informações.</p>
 <p>EDITAL: <a href="http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf" class="uri">http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf</a></p>
-<p>PIBITI/CNPQ</p>
+</div>
+</div>
+<div id="pibiticnpq" class="section level2">
+<h2>PIBITI/CNPQ</h2>
+<div style="text-align:justify;">
 <p>O PIBITI é um programa que estimula a participação de estudantes do ensino superior às atividades relacionadas ao desenvolvimento tecnológico e processos de inovação. Os projetos no âmbito do PIBITI deverão contribuir para formação de recursos humanos que se dedicarão ao fortalecimento da capacidade inovadora das empresas no País. Além disso, o PIBITI deverá contribuir para a formação do cidadão pleno com condições de participar de forma criativa na sua comunidade. Assim, as propostas participantes desse Edital deverão mostrar comprovada interação com empresas e/ou comunidades, explicitando a participação do estudante dentro do projeto.</p>
 <p>Período de inscrições: Abril a maio.</p>
 <p>Para maiores informações.</p>
-<p>EDITAL: <a href="http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf" class="uri">http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf</a> PIVIC</p>
+<p>EDITAL: <a href="http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf" class="uri">http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf</a></p>
+</div>
+</div>
+<div id="pivic" class="section level2">
+<h2>PIVIC</h2>
+<div style="text-align:justify;">
 <p>O programa tem por objetivo dar oportunidade a alunos de graduação, que não possuem bolsa de órgãos financiadores, de se iniciarem nas atividades de pesquisa junto a pesquisadores da UFV em seus trabalhos e projetos de pesquisa. Este vínculo não implicará em recebimento de bolsa ou qualquer fonte financeira. UFVCREDI A SICOOB UFVCredi e a Pró-Reitoria de Pesquisa e Pós-Graduação, da Universidade Federal de Viçosa, comunicam que estarão abertas inscrições de abril a maio para a concessão de bolsas de iniciação científica a cooperados, filhos ou dependentes de cooperados da SICOOB UFVCredi. Os cooperados deverão ser associados da SICOOB UFVCredi há pelo menos seis meses e estar em dia com suas obrigações com a cooperativa.</p>
 <p>Para maiores informações.</p>
 <p>EDITAL: <a href="http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf" class="uri">http://www.ppg.ufv.br/wp-content/uploads/2013/07/Edital-PIBIC-UFV-2019-2020-GERAL-.pdf</a></p>
+</div>
+</div>
 
 
 
@@ -441,6 +558,11 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
 
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
